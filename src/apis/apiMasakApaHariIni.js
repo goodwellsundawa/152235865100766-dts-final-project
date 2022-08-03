@@ -2,6 +2,7 @@ import axios from "axios";
 
 const initAPI = axios.create({
   baseURL: "https://masak-apa.tomorisakura.vercel.app",
+  headers: { "Access-Control-Allow-Origin": "*" },
 });
 
 initAPI.interceptors.request.use((config) => {
