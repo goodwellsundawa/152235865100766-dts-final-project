@@ -109,57 +109,6 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </ScrollToTop>
-      {/*<ScrollToTop>
-        <>
-          {errorListGenres ? (
-            <>Oh no, there was an error : dataListGenres</>
-          ) : isUninitializedListGenres ? (
-            <>Oh no, it's Uninitialized : dataListGenres</>
-          ) : isLoadingListGenres ? (
-            <LoadingPage />
-          ) : dataListGenres ? (
-            <>
-              {console.log("dataListGenres :", dataListGenres)}
-              <Container maxWidth="lg">
-                <Header
-                  title="GAMES DATABASE"
-                  sections={dataListGenres.results}
-                />
-              </Container>
-            </>
-          ) : null}
-        </>
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route
-            path="/login"
-            element={
-              <ProtectLoginRegister>
-                <LoginPage />
-              </ProtectLoginRegister>
-            }
-          />
-          <Route
-            path="/register"
-            element={
-              <ProtectLoginRegister>
-                <RegisterPage />
-              </ProtectLoginRegister>
-            }
-          />
-          <Route path="/list/:type" element={<ListCustomePost />} />
-          <Route
-            path="/detail/:id"
-            element={
-              <PrivateRoute>
-                <DetailPost />
-              </PrivateRoute>
-            }
-          />
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-        <Footer title="" description="Video Game Discovery Service" />
-      </ScrollToTop>*/}
     </>
   );
 }
