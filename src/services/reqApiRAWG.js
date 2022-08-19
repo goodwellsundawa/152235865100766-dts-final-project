@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const key = "?key=bda281be14f1457c974da1e78f3cc6d5";
+const key = "?key=7b98e317a5314aa284a7574e87642044";
 
 export const reqApiRAWG = createApi({
   reducerPath: "reqApiRAWG",

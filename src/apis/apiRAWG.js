@@ -7,7 +7,7 @@ const initAPI = axios.create({
 initAPI.interceptors.request.use((config) => {
   config.params = {
     // add your default params
-    key: "bda281be14f1457c974da1e78f3cc6d5",
+    key: "7b98e317a5314aa284a7574e87642044",
     // spread the request's params
     ...config.params,
   };
